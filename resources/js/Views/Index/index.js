@@ -3,8 +3,9 @@ import { inject, observer } from 'mobx-react';
 import React,{ useState,useEffect} from 'react';
 import Layout from '../../Components/Layout/front.layout';
 import { Bar,Line } from 'react-chartjs-2';
-   
-    const options = {
+import { PushSpinner,BallSpinner,CircleSpinner } from "react-spinners-kit";
+import {Helmet} from "react-helmet";
+const options = {
         scales: {
         yAxes: [
             {
@@ -59,7 +60,7 @@ const Index = (props) => {
 
     },[])
   
-     if(loading) return <div>Yükleniyor</div>;
+     if(loading) return <div className="loading-a"><CircleSpinner size={50} color="#686769" loading={true} /></div>;
      const chartStockNameArray = [];
      const chartStockQuantityArray = [];
      chartStock.map((item) => {
@@ -116,6 +117,9 @@ const Index = (props) => {
           
     return (
         <Layout>
+            <Helmet>
+                <title>mStock - Home</title>
+            </Helmet>
             <div className="container mt-5">
                 <div className="row">
                     <div className="col-md-3">

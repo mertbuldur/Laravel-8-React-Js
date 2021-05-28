@@ -32,10 +32,12 @@
         "react-bootstrap": "^1.6.0",
         "react-chartjs-2": "^3.0.3",
         "react-data-table-component": "^6.11.7",
+        "react-helmet": "^6.1.0",
         "react-images-upload": "^1.2.8",
         "react-router-bootstrap": "^0.25.0",
         "react-router-dom": "^5.2.0",
         "react-select": "^4.3.1",
+        "react-spinners-kit": "^1.9.1",
         "styled-components": "^5.3.0",
         "sweetalert": "^2.1.2",
         "yup": "^0.32.9"

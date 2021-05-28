@@ -143,7 +143,7 @@ const Login = (props) => {
               )}
           </Formik>
           <Link className="mt-3" style={{display:'block'}} to="/register">Kayıt Ol</Link>
-          <p className="mt-5 mb-3 text-muted">© 2017-2018</p>
+          <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
         </form>
         </div>
         )
